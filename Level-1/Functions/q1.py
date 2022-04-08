@@ -1,6 +1,3 @@
-from random import choice
-
-
 def fibonacci(num):
     sum1 = 1
     sum2 = 1
