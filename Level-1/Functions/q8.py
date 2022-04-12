@@ -10,8 +10,8 @@ def primeNumber(limit):
 
 
 def main():
-    fib_input = int(input("Enter a number: "))
-    primeNumber(fib_input)
+    num = int(input("Enter a number: "))
+    primeNumber(num)
 
 
 if __name__ == "__main__":
