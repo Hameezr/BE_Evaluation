@@ -20,7 +20,7 @@ class ListBox(Box):
     def __init__(self):
         self.arr = []
     
-    def add(self, item):
+    def add(self, *item):
         self.arr.append(item)
 
     def empty(self):
