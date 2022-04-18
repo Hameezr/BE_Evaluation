@@ -35,40 +35,16 @@ class DictBox(Box):
     def __init__(self):
         self.dict = {}
     
-    def add(self, key, value):
-        self.dict.update({key: value})
+    def add(self, item):
+        self.dict.update({item: item})
 
     def empty(self):
-        tempArr = self.dict.items()
+        tempArr = self.dict.values()
         self.dict = {}
         return tempArr
 
     def count(self):
         return len(self.dict)
 
-box = ListBox()
-box.add(1)
-print(box.arr)
-before_empty = box.empty()
-print('list before empty', before_empty)
-print(box.arr)
-box.add(1)
-box.add(2)
-box.add(3)
-count = box.count()
-print(box.arr, 'count:', count)
-
-dict_box = DictBox()
-dict_box.add('test', 'value')
-print(dict_box.dict)
-t = dict_box.empty()
-print(t)
-dict_box.add('a', 1)
-dict_box.add('b', 2)
-dict_box.add('c', 3)
-count = dict_box.count()
-print(dict_box.dict, 'count:', count)
-
-
-
-
+def repack_boxes(): 
+    
