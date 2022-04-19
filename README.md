@@ -1,5 +1,3 @@
-# Django_Project
-
 ## Folder Structure
 
 ### Level-1
